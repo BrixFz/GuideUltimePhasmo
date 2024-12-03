@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entités - Informations</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 1000px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            overflow-y: auto;
+            height: 80%;
+            width: 80%;
+        }
+        h1 {
+            text-align: center;
+            color: #FF4C4C;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .entites-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        .entite {
+            padding: 15px;
+            background-color: rgba(255, 0, 0, 0.1);
+            border-left: 5px solid #FF4C4C;
+            border-radius: 8px;
+        }
+        .entite h2 {
+            color: #FF4C4C;
+            font-size: 1.4em;
+        }
+        .entite p {
+            color: #fff;
+            font-size: 1em;
+        }
+        footer {
+            text-align: center;
+            color: #FF4C4C;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    </div>
+    
+<div class="container">
+        <h1>Entités - Informations</h1>
+        <div class="entites-container">
+        <button onclick="showContent('entites')">Entités</button>
+        <button onclick="showContent('preuves')">Types de Preuves</button>
+    </div>
+
+        <div class="entite">
+            <h2>👻 Esprit</h2>
+            <p><span class="highlight">Savoir</span><br>- Si tu l'encens, sa chasse sera de 180s au lieu de 90s.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👹 Spectre</h2>
+            <p><span class="highlight">Savoir</span><br>- Ne marche jamais dans le sel.<br>- Ne sera jamais ralenti par le sel T3 pendant une chasse.<br><span class="highlight">Comportement</span><br>- Peut se téléporter vers des joueurs, laissant un EMF 2 ou 5.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👻 Fantôme</h2>
+            <p><span class="highlight">Savoir</span><br>- N'apparaît pas sur les photos.<br>- Moins visible lors des chasses.<br>- Draine la santé mentale (0.5 %/s) lors des chasses à moins de 10m.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👹 Cauchemar</h2>
+            <p><span class="highlight">Savoir</span><br>- Peut éteindre instantanément une lumière récemment allumée.<br><span class="highlight">Seuil de chasse</span><br>- 60% quand les lumières sont éteintes dans la pièce.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👻 Poltergeist</h2>
+            <p><span class="highlight">Savoir</span><br>- Peut lancer plusieurs objets à la fois, réduisant la santé mentale de 2% par objet lancé.<br><span class="highlight">Comportement</span><br>- Plus de chance de lancer des objets et d'interagir avec eux.</p>
+        </div>
+
+        <div class="entite">
+            <h2>💀 Banshee</h2>
+            <p><span class="highlight">Savoir</span><br>- Cri spécial à travers le micro parabolique.<br>- La cible perd 15% de santé mentale si elle touche l'entité pendant un événement fantomatique de chant.<br><span class="highlight">Comportement</span><br>- Ne poursuit que sa cible pendant une chasse.<br>- Se déplace vers sa cible, en laissant un EMF 2.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👻 Djinn</h2>
+            <p><span class="highlight">Savoir</span><br>- Capacité à réduire la santé mentale des joueurs à proximité de 25%, laissant un EMF 2 au disjoncteur.<br><span class="highlight">Comportement</span><br>- Ne peut pas éteindre le disjoncteur.<br><span class="highlight">Vitesse de chasse</span><br>- 2.5m/s lorsque le disjoncteur est allumé.</p>
+        </div>
+
+        <div class="entite">
+            <h2>😈 Revenant</h2>
+            <p><span class="highlight">Vitesse de chasse</span><br>- 3.0m/s immédiatement une fois que le joueur est détecté jusqu'à ce que l'entité atteigne le dernier emplacement connu du joueur.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👻 Ombre</h2>
+            <p><span class="highlight">Savoir</span><br>- Ne fait pas d'interactions entraînant des EMF 2, 3 ou 5 avec quelqu'un dans la pièce.<br><span class="highlight">Comportement</span><br>- Fera plus d'événements fantomatiques avec une santé mentale faible.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👹 Demon</h2>
+            <p><span class="highlight">Savoir</span><br>- Si tu l'encens, il ne pourra pas chasser pendant 60s au lieu de 90s.<br><span class="highlight">Comportement</span><br>- Portée du crucifix augmentée de 50% par niveau.<br><span class="highlight">Seuil de chasse</span><br>- Capacité à chasser avec n'importe quelle santé mentale, chasse normalement à 70%.</p>
+        </div>
+
+        <div class="entite">
+            <h2>💀 Yurei</h2>
+            <p><span class="highlight">Savoir</span><br>- Peut fermer une porte et réduire la santé mentale des joueurs à proximité de 15% si une porte est dans la pièce.<br><span class="highlight">Comportement</span><br>- L'encens emprisonne l'entité dans sa pièce pendant 60s.</p>
+        </div>
+
+        <div class="entite">
+            <h2>😈 Oni</h2>
+            <p><span class="highlight">Savoir</span><br>- Draine 20% lors des événements fantomatiques.<br><span class="highlight">Comportement</span><br>- Plus actif avec plusieurs personnes.</p>
+        </div>
+
+        <div class="entite">
+            <h2>💀 Yokai</h2>
+            <p><span class="highlight">Savoir</span><br>- Sa distance auditive est inférieure à 2.5m pendant les chasses.<br><span class="highlight">Comportement</span><br>- Plus actif quand on lui parle.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👹 Hantu</h2>
+            <p><span class="highlight">Savoir</span><br>- Peut avoir un souffle glacé visible pendant les chasses avec le disjoncteur désactivé.<br><span class="highlight">Comportement</span><br>- Forte chance de désactiver le disjoncteur.<br><span class="highlight">Vitesse de chasse</span><br>- Plus rapide par temps froid.</p>
+        </div>
+
+        <div class="entite">
+            <h2>😈 Goryo</h2>
+            <p><span class="highlight">Savoir</span><br>- Les dots n'apparaissent que sur la caméra et s'afficheront rarement si le joueur est dans la même pièce.<br><span class="highlight">Comportement</span><br>- Ne peut pas changer de pièce favorite.</p>
+        </div>
+
+        <div class="entite">
+            <h2>💀 Myling</h2>
+            <p><span class="highlight">Savoir</span><br>- Ses bruits de pas et voix ne peuvent pas être entendus à plus de 12m pendant la chasse.<br><span class="highlight">Comportement</span><br>- Beaucoup de sons paranormaux grâce au micro parabolique.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👹 Onryo</h2>
+            <p><span class="highlight">Savoir</span><br>- Chassera après avoir soufflé une 3e flamme.<br><span class="highlight">Comportement</span><br>- Les flammes agissent comme des crucifix.</p>
+        </div>
+
+        <div class="entite">
+            <h2>😈 Les Jumeaux</h2>
+            <p><span class="highlight">Savoir</span><br>- Ils font souvent des interactions en même temps.<br><span class="highlight">Comportement</span><br>- Le leurre ne fait que des interactions/EMF, aucune preuve ni capteur.<br><span class="highlight">Vitesse de chasse</span><br>- Soit 1.53m/s, soit 1.87m/s selon le jumeau qui chasse.</p>
+        </div>
+
+        <div class="entite">
+            <h2>💀 Raiju</h2>
+            <p><span class="highlight">Savoir</span><br>- Lors d'une chasse, l'électronique clignotte à 15m de portée au lieu de 10m.<br><span class="highlight">Seuil de chasse</span><br>- Peut chasser avec 65% de santé mentale à proximité des équipements de joueur actifs.<br><span class="highlight">Vitesse de chasse</span><br>- 2.5m/s à proximité d'un équipement actif de joueur, 1.7m/s sinon.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👹 Obake</h2>
+            <p><span class="highlight">Savoir</span><br>- Empreintes digitales spéciales à 6 doigts.<br>- A 6,66% de chances de changer de modèle d'entité lors du clignottement pendant les chasses (garanti une fois par chasse, revient au modèle original).<br>- Ne laisse pas toujours de traces ultraviolettes.<br>- Peut faire disparaître les preuves ultraviolettes avant 2min.<br><span class="highlight">Preuve</span><br>- Ultraviolet garanti en mode Cauchemar/Démence.</p>
+        </div>
+
+        <div class="entite">
+            <h2>😈 Le Mimic</h2>
+            <p><span class="highlight">Savoir</span><br>- Affiche toujours les orbes comme fausses preuves supplémentaires (4ème preuve) même en mode 0 preuve.<br>- Copie le comportement et les traits des autres entités.<br>- Change de comportement toutes les 30s à 2min.<br><span class="highlight">Seuil de chasse</span><br>- Copie le comportement de l'entité actuellement imitée.<br><span class="highlight">Vitesse de chasse</span><br>- Copie la vitesse de l'entité actuellement imitée.</p>
+        </div>
+
+        <div class="entite">
+            <h2>💀 Moroi</h2>
+            <p><span class="highlight">Savoir</span><br>- Lance une malédiction sur le joueur lorsqu'elle est entendue à traverss un micro parabolique ou une spirit box, la malédiction fait perdre la santé mentale 2x plus vite.<br>- La durée de l'encens augmente de 50% par niveau (respectivement 7.5s T1, 9s T2, 10.5s T3).<br><span class="highlight">Vitesse de chasse</span><br>- Plus rapide lorsque la santé mentale moyenne est faible, peut atteindre une vitesse de 3.71m/s dans la ligne de vue.<br><span class="highlight">Preuve</span><br>- Spirit box garantie en mode Cauchemar/Démence.</p>
+        </div>
+
+        <div class="entite">
+            <h2>👹 Deogen</h2>
+            <p><span class="highlight">Savoir</span><br>- Respiration lourde à travers la spirit box à moins de 1m de l'entité.<br>- On ne peut pas se cacher du Deogen.<br><span class="highlight">Comportement</span><br>- Chance accrue pour les dots/écriture.<br><span class="highlight">Vitesse de chasse</span><br>- 3.0m/s à distance, descend à 0.4m/s à proximité du joueur.<br><span class="highlight">Preuve</span><br>- Spirit Box garantie en mode Cauchemar/Démence.</p>
+        </div>
+
+        <div class="entite">
+            <h2>😈 Thayé</h2>
+            <p><span class="highlight">Comportement</span><br>- L'entité vieillit avec le temps (toutes les 1 à 2min) lorsque le joueur est à proximité.<br>- Plus l'entité est jeune, plus elle sera active.<br>- Chance accrue pour les dots/écriture.<br><span class="highlight">Seuil de chasse</span><br>- Chasse à 75% à son plus jeune âge, 15% à son plus vieil âge.<br><span class="highlight">Vitesse de chasse</span><br>- 2.75m/s au plus jeune, 1.0m/s au plus âgé, n'accélère pas dans la ligne de vue.</p>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<div id="preuves" class="container">
+        <h1 class="neon">Types de Preuves dans Phasmophobia</h1>
+        <div class="preuves">
+            <h2>🔍 EMF 5</h2>
+            <p>Une lecture de niveau 5 sur le détecteur EMF est une preuve que l'entité est présente.</p>
+        </div>
+        <div class="preuves">
+            <h2>🌡️ Température froide</h2>
+            <p>Une température sous 0°C est une indication que l'entité utilise cette méthode.</p>
+        </div>
+        <div class="preuves">
+            <h2>🎥 Orbes fantomatiques</h2>
+            <p>La détection d'orbes est une autre preuve importante de l'existence de l'entité.</p>
+        </div>
+        <div class="preuves">
+            <h2>📻 SpiritBox</h2>
+            <p>Les entités communiquent souvent à travers des appareils vocaux comme le spirit box.</p>
+         <div class="preuves">
+                <h3>🧟‍♀️ Projecteur Dots</h3>
+                <p>Le Projecteur Dots est un indicateur visuel que certaines entités laissent derrière elles. Lorsque le projecteur est utilisé, il projette des formes ou des points qui indiquent la présence de l'entité.</p>
+            </div>
+            <div class="preuves">
+                <h3>🔦 Ultraviolet</h3>
+                <p>Une lumière ultraviolette peut révéler des empreintes ou des signes invisibles à l'œil nu, prouvant la présence de certaines entités.</p>
+            </div>
+            <div class="preuves">
+                <h3>📖 Écriture</h3>
+                <p>Les entités peuvent interagir avec un carnet pour laisser des messages ou des symboles, ce qui est un indice clé pour identifier leur type.</p>
+            </div>
+        </div>
+
+<footer>
+            Créé par <span class="highlight">BrixFz</span>
+        </footer>
+    </div>
+</body>
+</html>
+
+ <script>
+        function showContent(contentId) {
+            document.querySelectorAll('.container').forEach(container => {
+                container.classList.remove('active');
+            });
+            document.getElementById(contentId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
